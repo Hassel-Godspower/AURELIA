@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AURELIA — Luxury Cosmetics</title>
+  <meta name="description" content="AURELIA crafts luminous skincare for melanin-rich skin. Serums, oils, SPF and more."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="products.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">AURE<span>LIA</span></a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="desktop-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Bag</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="cart-link" href="cart.html" aria-label="Cart">Bag <span class="cart-badge" data-cart-count hidden>0</span></a>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="cart.html">Bag</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1800&q=85" alt="Luxury cosmetics flat lay" width="1800" height="1200"/>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">Skincare · Lagos & beyond</p>
+      <h1>Glow that feels like you</h1>
+      <p class="lead">Formulas for radiant, melanin-rich skin — serums, oils, and daily essentials with quiet luxury.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="shop.html">Shop the collection</a>
+        <a class="btn btn-ghost" href="about.html">Our story</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Featured</p>
+        <h2>Bestsellers & new</h2>
+        <div class="divider"></div>
+        <p class="muted">Clean textures. Visible results. Made for everyday ritual.</p>
+      </div>
+      <div class="product-grid" data-featured-grid></div>
+      <p style="text-align:center;margin-top:2rem">
+        <a class="btn btn-ghost" href="shop.html">View all products</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-2);border-block:1px solid var(--line)">
+    <div class="container" style="text-align:center;max-width:640px;margin:0 auto">
+      <p class="eyebrow">Promise</p>
+      <h2 style="margin-bottom:1rem">No white cast. No empty claims.</h2>
+      <div class="divider"></div>
+      <p class="muted" style="font-family:var(--font-display);font-style:italic;font-size:1.15rem">
+        Every formula is tested for deep skin tones, humidity, and real life — from morning SPF to night repair.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">AURELIA</div>
+        <p class="muted">Luxury cosmetics for luminous skin.</p>
+      </div>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Bag</a>
+      </div>
+      <div class="footer-links">
+        <a href="checkout.html">Checkout</a>
+        <a href="shop.html?cat=Serums">Serums</a>
+        <a href="shop.html?cat=SPF">SPF</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 AURELIA Cosmetics · Demo store</div>
+  </footer>
+</body>
+</html>

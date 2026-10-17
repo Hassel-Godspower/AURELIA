@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Order confirmed · AURELIA</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="products.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">AURE<span>LIA</span></a>
+      <nav class="desktop-nav">
+        <a href="shop.html">Shop</a>
+        <a href="index.html">Home</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="cart-link" href="cart.html">Bag <span class="cart-badge" data-cart-count hidden>0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" style="padding:3rem 1.25rem">
+    <div class="success-panel">
+      <p class="eyebrow">Thank you</p>
+      <h1>Order confirmed</h1>
+      <p class="muted">Order ID: <strong style="color:var(--text)" data-order-id>—</strong></p>
+      <div data-order-detail style="margin-top:1.25rem"></div>
+      <p class="muted" style="margin-top:1.5rem;font-size:.9rem">This is a demo store. No payment was taken and nothing will ship.</p>
+      <a class="btn btn-primary" style="margin-top:1.75rem" href="shop.html">Continue shopping</a>
+    </div>
+  </div>
+</body>
+</html>

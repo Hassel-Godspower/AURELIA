@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Product · AURELIA</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="products.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">AURE<span>LIA</span></a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Bag</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="cart-link" href="cart.html" aria-label="Cart">Bag <span class="cart-badge" data-cart-count hidden>0</span></a>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="cart.html">Bag</a>
+    </nav>
+  </header>
+
+  <div class="container pdp">
+    <p class="breadcrumb"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / Product</p>
+    <div data-pdp></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">AURELIA</div>
+        <p class="muted">Luxury cosmetics for luminous skin.</p>
+      </div>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Bag</a>
+        <a href="checkout.html">Checkout</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 AURELIA Cosmetics · Demo store</div>
+  </footer>
+</body>
+</html>

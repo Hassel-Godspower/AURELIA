@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Checkout · AURELIA</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="products.js" defer></script>
+  <script src="cart.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">AURE<span>LIA</span></a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Bag</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="cart-link" href="cart.html" aria-label="Cart">Bag <span class="cart-badge" data-cart-count hidden>0</span></a>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Bag</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="page-hero">
+      <p class="breadcrumb"><a href="cart.html">Bag</a> / Checkout</p>
+      <h1>Checkout</h1>
+      <p class="muted">Demo checkout — no real payment is processed.</p>
+    </div>
+
+    <div class="checkout-grid" style="padding-bottom:3rem">
+      <form id="checkout-form" class="form-card">
+        <h2>Delivery details</h2>
+        <div class="form-row two">
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input id="name" name="name" required placeholder="Ada Okafor"/>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required placeholder="0801 234 5678"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@email.com"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="address">Street address</label>
+            <input id="address" name="address" required placeholder="12 Admiralty Way"/>
+          </div>
+        </div>
+        <div class="form-row two">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" name="city" required placeholder="Lagos"/>
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <select id="state" name="state" required>
+              <option value="Lagos">Lagos</option>
+              <option value="Abuja">Abuja</option>
+              <option value="Rivers">Rivers</option>
+              <option value="Oyo">Oyo</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="notes">Order notes (optional)</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Gate code, preferred time…"></textarea>
+          </div>
+        </div>
+        <h2 style="margin-top:1.5rem">Payment</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="payment">Method</label>
+            <select id="payment" name="payment" required>
+              <option value="paystack">Card / Bank (Paystack — demo)</option>
+              <option value="transfer">Bank transfer</option>
+              <option value="cod">Pay on delivery</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:1rem">Place order</button>
+      </form>
+
+      <aside class="form-card cart-summary">
+        <h2>Your order</h2>
+        <div data-checkout-summary></div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-bottom" style="border:0;margin:0">© 2026 AURELIA · Demo only — no real charges</div>
+  </footer>
+</body>
+</html>
